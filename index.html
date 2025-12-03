@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahammed Kawser - Premium Website</title>
+<style>
+/* ===== Base Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0a0a;
+    color: white;
+    overflow-x: hidden;
+}
+h1, h2, h3 { margin: 0; }
+a { text-decoration: none; transition: 0.3s; }
+
+/* ===== Header ===== */
+.header {
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#0f0f0f,#141414);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.header img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #00d9ff;
+    box-shadow: 0 0 30px #00e1ff;
+    transition: transform 0.3s;
+}
+.header img:hover { transform: scale(1.08) rotate(2deg); }
+.header h1 {
+    margin-top: 20px;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px #00eaff;
+}
+.header h3 {
+    color: #00eaff;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.typing {
+    border-right: 2px solid #00eaff;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* ===== Section ===== */
+.section {
+    background: rgba(255,255,255,0.05);
+    margin: 30px auto;
+    padding: 35px 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    text-align: left;
+    box-shadow: 0 0 25px rgba(0,255,255,0.2);
+}
+.section h2 {
+    color: #00eaff;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align:center;
+    text-shadow: 0 0 8px #00eaff;
+}
+.section p { line-height: 1.7; margin-bottom: 15px; font-size:16px; }
+.highlight { color:#00eaff; font-weight:bold; text-shadow: 0 0 5px #00eaff; }
+
+/* ===== Cards ===== */
+.card-list {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+.card {
+    background: rgba(0,217,255,0.12);
+    padding:20px 25px;
+    border-radius:15px;
+    flex:1 1 250px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align:left;
+}
+.card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 0 40px rgba(0,255,255,0.5);
+}
+.card ul { list-style:none; padding-left:0; margin:0; }
+.card ul li { margin:8px 0; font-size:14px; }
+
+/* ===== Contact Buttons ===== */
+.contact { text-align:center; margin-top:20px;}
+.glow-button {
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:12px;
+    font-weight:bold;
+    color:white;
+    text-transform:uppercase;
+    margin:8px;
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(0,255,255,0.5);
+}
+.glow-button::before {
+    content:""; position:absolute; top:0; left:-100%; width:100%; height:100%;
+    background: linear-gradient(120deg, transparent, rgba(0,255,255,0.5), transparent);
+    transition: all 0.5s;
+}
+.glow-button:hover::before { left:100%; }
+.glow-button:hover { transform:translateY(-3px); box-shadow:0 0 25px rgba(0,255,255,1),0 0 50px rgba(0,255,255,0.5);}
+.fb {background:#1877f2;} .messenger {background:#0099ff;} .whatsapp {background:#25D366;} .call {background:#ff5722;}
+
+/* ===== Responsive ===== */
+@media(max-width:600px){ .card-list{flex-direction:column;} }
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <img src="https://uploads.onecompiler.io/43wt7xmwa/445zy8jxk/91.jpg" alt="Ahammed Kawser">
+    <h1>Ahammed Kawser</h1>
+    <h3><span class="typing" id="typing"></span></h3>
+</div>
+
+<!-- About -->
+<div class="section">
+    <h2>About Me</h2>
+    <p>আমি <span class="highlight">আহাম্মেদ কাওসার</span>, একজন Professional Web Developer & Digital Creator। আমি আপনাকে এমন ওয়েবসাইট দিই যা আপনার ব্র্যান্ডকে অনলাইনে দ্রুত ও প্রভাবশালীভাবে পরিচিত করে।</p>
+
+    <div class="card-list">
+        <div class="card">
+            <h3>💠 What I Build</h3>
+            <ul>
+                <li>Personal Website</li>
+                <li>Business Website</li>
+                <li>Portfolio</li>
+                <li>Landing Page</li>
+                <li>Agency Website</li>
+                <li>Affiliate / Blogging Website</li>
+                <li>Digital Product Website</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>💠 Why My Websites?</h3>
+            <ul>
+                <li>⚡ Ultra‑Fast Loading</li>
+                <li>🎨 Premium Modern UI</li>
+                <li>📱 Mobile Responsive</li>
+                <li>🔒 Secure & Optimized</li>
+                <li>🚀 SEO Friendly</li>
+                <li>💵 Low‑Cost + High‑Value</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>💠 Who It's For</h3>
+            <ul>
+                <li>Brand Creators</li>
+                <li>Business Promoters</li>
+                <li>Online Earners</li>
+                <li>Client Attractors</li>
+                <li>Portfolio Seekers</li>
+            </ul>
+        </div>
+    </div>
+
+    <p>আপনার ব্র্যান্ড বা ব্যবসার জন্য প্রিমিয়াম ওয়েবসাইট পেতে <span class="highlight">আজই আমাদের সাথে কন্টাক্ট করুন</span>!</p>
+</div>
+
+<!-- Contact -->
+<div class="section contact">
+    <h2>Contact Me</h2>
+    <p>Phone: <b>01848041604</b><br>Email: <b>ahammedkawser@example.com</b></p>
+    <a class="glow-button fb" href="https://www.facebook.com/kawser.ahammed.durjoy" target="_blank">Facebook</a>
+    <a class="glow-button messenger" href="https://m.me/kawser.ahammed.durjoy" target="_blank">Messenger</a>
+    <a class="glow-button whatsapp" href="https://wa.me/8801848041604" target="_blank">WhatsApp</a>
+    <a class="glow-button call" href="tel:+8801848041604">📞 Call Now</a>
+</div>
+
+<!-- Typing Effect Script -->
+<script>
+const txts = ["Web Developer","Designer","Digital Creator"];
+let count = 0, index=0, currentTxt='', letter='';
+
+(function type(){
+    if(count===txts.length) count=0;
+    currentTxt = txts[count];
+    letter = currentTxt.slice(0, ++index);
+    document.getElementById('typing').textContent = letter;
+    if(letter.length === currentTxt.length){ count++; index=0; setTimeout(type,1000); }
+    else setTimeout(type,150);
+}());
+</script>
+
+</body>
+</html>
